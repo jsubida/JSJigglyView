@@ -20,6 +20,10 @@
 		4924EE5B152DEE54002D44E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4924EE3C152DEE52002D44E5 /* Foundation.framework */; };
 		4924EE63152DEE54002D44E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4924EE61152DEE54002D44E5 /* InfoPlist.strings */; };
 		4924EE66152DEE54002D44E5 /* JSJigglyViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4924EE65152DEE54002D44E5 /* JSJigglyViewTests.m */; };
+		4924EE75152DEFF1002D44E5 /* JSJigglyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4924EE74152DEFF1002D44E5 /* JSJigglyView.m */; };
+		4924EE78152DF107002D44E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4924EE77152DF107002D44E5 /* QuartzCore.framework */; };
+		4924EE7A152DF5B3002D44E5 /* wiggle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4924EE79152DF5B3002D44E5 /* wiggle.jpg */; };
+		4924EE7E152DF65B002D44E5 /* UIView+Jiggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4924EE7D152DF65B002D44E5 /* UIView+Jiggle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,12 @@
 		4924EE62152DEE54002D44E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4924EE64152DEE54002D44E5 /* JSJigglyViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSJigglyViewTests.h; sourceTree = "<group>"; };
 		4924EE65152DEE54002D44E5 /* JSJigglyViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSJigglyViewTests.m; sourceTree = "<group>"; };
+		4924EE73152DEFF1002D44E5 /* JSJigglyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSJigglyView.h; sourceTree = "<group>"; };
+		4924EE74152DEFF1002D44E5 /* JSJigglyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSJigglyView.m; sourceTree = "<group>"; };
+		4924EE77152DF107002D44E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4924EE79152DF5B3002D44E5 /* wiggle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wiggle.jpg; sourceTree = "<group>"; };
+		4924EE7C152DF65B002D44E5 /* UIView+Jiggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Jiggle.h"; sourceTree = "<group>"; };
+		4924EE7D152DF65B002D44E5 /* UIView+Jiggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Jiggle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4924EE78152DF107002D44E5 /* QuartzCore.framework in Frameworks */,
 				4924EE3B152DEE52002D44E5 /* UIKit.framework in Frameworks */,
 				4924EE3D152DEE52002D44E5 /* Foundation.framework in Frameworks */,
 				4924EE3F152DEE52002D44E5 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +111,7 @@
 		4924EE39152DEE52002D44E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4924EE77152DF107002D44E5 /* QuartzCore.framework */,
 				4924EE3A152DEE52002D44E5 /* UIKit.framework */,
 				4924EE3C152DEE52002D44E5 /* Foundation.framework */,
 				4924EE3E152DEE52002D44E5 /* CoreGraphics.framework */,
@@ -116,6 +128,10 @@
 				4924EE4C152DEE53002D44E5 /* MainStoryboard.storyboard */,
 				4924EE4F152DEE53002D44E5 /* JSViewController.h */,
 				4924EE50152DEE53002D44E5 /* JSViewController.m */,
+				4924EE73152DEFF1002D44E5 /* JSJigglyView.h */,
+				4924EE74152DEFF1002D44E5 /* JSJigglyView.m */,
+				4924EE7C152DF65B002D44E5 /* UIView+Jiggle.h */,
+				4924EE7D152DF65B002D44E5 /* UIView+Jiggle.m */,
 				4924EE41152DEE52002D44E5 /* Supporting Files */,
 			);
 			path = JSJigglyView;
@@ -124,6 +140,7 @@
 		4924EE41152DEE52002D44E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4924EE7B152DF5B7002D44E5 /* Images */,
 				4924EE42152DEE52002D44E5 /* JSJigglyView-Info.plist */,
 				4924EE43152DEE52002D44E5 /* InfoPlist.strings */,
 				4924EE46152DEE52002D44E5 /* main.m */,
@@ -149,6 +166,14 @@
 				4924EE61152DEE54002D44E5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4924EE7B152DF5B7002D44E5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4924EE79152DF5B3002D44E5 /* wiggle.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +250,7 @@
 			files = (
 				4924EE45152DEE52002D44E5 /* InfoPlist.strings in Resources */,
 				4924EE4E152DEE53002D44E5 /* MainStoryboard.storyboard in Resources */,
+				4924EE7A152DF5B3002D44E5 /* wiggle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +288,8 @@
 				4924EE47152DEE52002D44E5 /* main.m in Sources */,
 				4924EE4B152DEE53002D44E5 /* JSAppDelegate.m in Sources */,
 				4924EE51152DEE53002D44E5 /* JSViewController.m in Sources */,
+				4924EE75152DEFF1002D44E5 /* JSJigglyView.m in Sources */,
+				4924EE7E152DF65B002D44E5 /* UIView+Jiggle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +461,7 @@
 				4924EE6B152DEE54002D44E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4924EE6C152DEE54002D44E5 /* Build configuration list for PBXNativeTarget "JSJigglyViewTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +470,7 @@
 				4924EE6E152DEE54002D44E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

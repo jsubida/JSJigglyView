@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSJigglyView.h"
 
 @interface JSViewController : UIViewController
+- (IBAction)startJiggle:(id)sender;
+- (IBAction)stopJiggle:(id)sender;
 
 @end

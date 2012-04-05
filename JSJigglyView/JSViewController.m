@@ -17,13 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -31,4 +29,19 @@
     return YES;
 }
 
+- (IBAction)startJiggle:(id)sender 
+{
+    [self.view.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj respondsToSelector:@selector(setJiggling:)])
+            [obj setJiggling:YES];
+    }];
+}
+
+- (IBAction)stopJiggle:(id)sender 
+{
+    [self.view.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj respondsToSelector:@selector(setJiggling:)])
+            [obj setJiggling:NO];
+    }];
+}
 @end
