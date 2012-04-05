@@ -86,10 +86,12 @@
 // http://stackoverflow.com/questions/6604356/ios-icon-jiggle-algorithm
 - (void)setJiggling:(BOOL)isJiggling
 {
-    self.isJiggling = isJiggling;
-    if (isJiggling)
-        [self startJiggling];
-    else
-        [self stopJiggling];
+    if (self.isJiggling != isJiggling) {
+        self.isJiggling = isJiggling;
+        if (isJiggling)
+            [self startJiggling];
+        else
+            [self stopJiggling];        
+    }
 }
 @end
