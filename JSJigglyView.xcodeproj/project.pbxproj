@@ -23,7 +23,6 @@
 		4924EE75152DEFF1002D44E5 /* JSJigglyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4924EE74152DEFF1002D44E5 /* JSJigglyView.m */; };
 		4924EE78152DF107002D44E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4924EE77152DF107002D44E5 /* QuartzCore.framework */; };
 		4924EE7A152DF5B3002D44E5 /* wiggle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4924EE79152DF5B3002D44E5 /* wiggle.jpg */; };
-		4924EE7E152DF65B002D44E5 /* UIView+Jiggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4924EE7D152DF65B002D44E5 /* UIView+Jiggle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +59,6 @@
 		4924EE74152DEFF1002D44E5 /* JSJigglyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSJigglyView.m; sourceTree = "<group>"; };
 		4924EE77152DF107002D44E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4924EE79152DF5B3002D44E5 /* wiggle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wiggle.jpg; sourceTree = "<group>"; };
-		4924EE7C152DF65B002D44E5 /* UIView+Jiggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Jiggle.h"; sourceTree = "<group>"; };
-		4924EE7D152DF65B002D44E5 /* UIView+Jiggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Jiggle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +127,6 @@
 				4924EE50152DEE53002D44E5 /* JSViewController.m */,
 				4924EE73152DEFF1002D44E5 /* JSJigglyView.h */,
 				4924EE74152DEFF1002D44E5 /* JSJigglyView.m */,
-				4924EE7C152DF65B002D44E5 /* UIView+Jiggle.h */,
-				4924EE7D152DF65B002D44E5 /* UIView+Jiggle.m */,
 				4924EE41152DEE52002D44E5 /* Supporting Files */,
 			);
 			path = JSJigglyView;
@@ -289,7 +284,6 @@
 				4924EE4B152DEE53002D44E5 /* JSAppDelegate.m in Sources */,
 				4924EE51152DEE53002D44E5 /* JSViewController.m in Sources */,
 				4924EE75152DEFF1002D44E5 /* JSJigglyView.m in Sources */,
-				4924EE7E152DF65B002D44E5 /* UIView+Jiggle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
